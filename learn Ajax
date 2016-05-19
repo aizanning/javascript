@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="src/js/jquery.js"></script>
+    <title></title>
+    <style>
+        .para{
+            background-color: #b3d4fc;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="send" value="Ajax获取">
+<div class="comment">已有评论：</div>
+<div id="resText"></div>
+<script>
+    $(function(){
+        $("#send").click(function(){
+            $("#resText").load("jQuery.html .para")
+        })
+    })
+</script>
+</body>
+</html>
